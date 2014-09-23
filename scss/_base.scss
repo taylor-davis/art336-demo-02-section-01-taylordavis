@@ -19,6 +19,7 @@ img {
     //margin: 0;
 }
 
+// Start nav styling
 nav {
     background-color: #fff;
     border: 1px solid $background-color;
@@ -53,6 +54,20 @@ a {
 }
         
 a:hover {
-    color: lighten{$color, 40%);
+    color: lighten($color,40%);
     transition: color 350ms linear;    
 }
+// End nav styling
+        
+h1, h2, h3 {
+    @include headline-font;
+    line-height: 1;
+}
+
+article h1 {
+    color: $color-title; 
+    @include fontSize(66px);
+    margin: 48px 0 48px 0; 
+    text-transform: capitalize; 
+}
+
