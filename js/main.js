@@ -13,3 +13,9 @@ $(function() {
     }
   });
 });
+
+
+//bigtxt.js
+if( 'querySelectorAll' in document ) {
+    $('#bigtext').bigtext();    
+}
